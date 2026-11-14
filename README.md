@@ -105,26 +105,26 @@
 ### Chapter 8. SRE & 관측성 — 숫자로 약속하고 지키기
 | Day | 주제 | 상태 |
 |---|---|---|
-| 58 | SRE 개념 — SLI/SLO/에러 버짓, 모니터링 vs 관측성 | ✍️ 작성 중 |
-| 59 | OpenTelemetry 계측 — 트레이스·메트릭·로그 | ✍️ 작성 중 |
-| 60 | 로그 수집 — Loki + Grafana Alloy | ✍️ 작성 중 |
-| 61 | 분산 트레이싱 — Tempo | ✍️ 작성 중 |
-| 62 | 알림 설계 — Alertmanager, 증상 기반 알림, 알림 피로 | ✍️ 작성 중 |
-| 63 | SLO 기반 Canary 분석 — Argo Rollouts + Prometheus | ✍️ 작성 중 |
-| 64 | 카오스 엔지니어링 — Chaos Mesh | ✍️ 작성 중 |
-| 65 | 장애 대응과 회고 — 런북, 온콜, 비난 없는 포스트모템 | ✍️ 작성 중 |
+| 58 | [SRE 개념 — SLI/SLO/에러 버짓, 모니터링 vs 관측성](08-sre-observability/day58-sre-slo.md) | ✅ |
+| 59 | [OpenTelemetry 계측 — 트레이스·메트릭·로그](08-sre-observability/day59-opentelemetry.md) | ✅ |
+| 60 | [로그 수집 — Loki + Grafana Alloy](08-sre-observability/day60-loki-alloy.md) | ✅ |
+| 61 | [분산 트레이싱 — Tempo](08-sre-observability/day61-tempo.md) | ✅ |
+| 62 | [알림 설계 — Alertmanager, 증상 기반 알림, 알림 피로](08-sre-observability/day62-alerting.md) | ✅ |
+| 63 | [SLO 기반 Canary 분석 — Argo Rollouts + Prometheus](08-sre-observability/day63-slo-canary.md) | ✅ |
+| 64 | [카오스 엔지니어링 — Chaos Mesh](08-sre-observability/day64-chaos-mesh.md) | ✅ |
+| 65 | [장애 대응과 회고 — 런북, 온콜, 비난 없는 포스트모템](08-sre-observability/day65-incident-postmortem.md) | ✅ |
 
 ### Chapter 9. 보안 — 4C 레이어별로 지키기
 | Day | 주제 | 상태 |
 |---|---|---|
-| 66 | 위협 모델링과 클라우드 네이티브 보안 4C | ✍️ 작성 중 |
-| 67 | 리눅스 호스트 하드닝 — SSH, sudo, nftables, fail2ban, Lynis/CIS | ✍️ 작성 중 |
-| 68 | 컨테이너 런타임 보안 — rootless, capabilities, seccomp, AppArmor | ✍️ 작성 중 |
-| 69 | K8s 워크로드 보안 — Pod Security Admission, securityContext, kube-bench | ✍️ 작성 중 |
-| 70 | NetworkPolicy와 제로 트러스트, mTLS | ✍️ 작성 중 |
-| 71 | 시크릿·인증서 — OpenBao/Vault, cert-manager | ✍️ 작성 중 |
-| 72 | 런타임 위협 탐지 — Falco | ✍️ 작성 중 |
-| 73 | 인증 통합과 감사 — Keycloak OIDC SSO, K8s 감사 로그 | ✍️ 작성 중 |
+| 66 | [위협 모델링과 클라우드 네이티브 보안 4C](09-security/day66-threat-modeling-4c.md) | ✅ |
+| 67 | [리눅스 호스트 하드닝 — SSH, sudo, nftables, fail2ban, Lynis/CIS](09-security/day67-host-hardening.md) | ✅ |
+| 68 | [컨테이너 런타임 보안 — rootless, capabilities, seccomp, AppArmor](09-security/day68-container-runtime-security.md) | ✅ |
+| 69 | [K8s 워크로드 보안 — Pod Security Admission, securityContext, kube-bench](09-security/day69-k8s-workload-security.md) | ✅ |
+| 70 | [NetworkPolicy와 제로 트러스트, mTLS](09-security/day70-networkpolicy-zero-trust.md) | ✅ |
+| 71 | [시크릿·인증서 — OpenBao/Vault, cert-manager](09-security/day71-vault-cert-manager.md) | ✅ |
+| 72 | [런타임 위협 탐지 — Falco](09-security/day72-falco.md) | ✅ |
+| 73 | [인증 통합과 감사 — Keycloak OIDC SSO, K8s 감사 로그](09-security/day73-keycloak-sso-audit.md) | ✅ |
 
 > 로드맵은 진행하면서 조정될 수 있습니다.
 
@@ -132,7 +132,7 @@
 | 항목 | 버전 / 도구 |
 |---|---|
 | OS | Ubuntu 24.04 LTS (Windows는 Docker Desktop + WSL2) |
-| Kubernetes | v1.34 (로컬: kind `infra-lab` 클러스터, 멀티노드: kubeadm) |
+| Kubernetes | v1.34 이상 (로컬: kind `infra-lab` 클러스터, 멀티노드: kubeadm. Chapter 9 일부 실습은 최신 kind 노드 v1.37 기준) |
 | OpenStack | 2025.1 Epoxy 이후 (DevStack / Kolla-Ansible) |
 | IaC | Terraform + terraform-provider-openstack (OpenTofu 호환) |
 

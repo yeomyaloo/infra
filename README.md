@@ -1,4 +1,4 @@
-# 🏗️ Infra Study — Docker에서 OpenStack까지
+# 🏗️ Infra Study — Docker에서 OpenStack, 그리고 AI 인프라까지
 
 하루에 한 주제씩, 컨테이너 한 개에서 시작해 프라이빗 클라우드까지 점진적으로 키워가는 인프라 학습 기록입니다.
 
@@ -72,8 +72,59 @@
 | 34 | [OpenStack VM 위에 Kubernetes 클러스터 구축](05-capstone/day34-k8s-on-openstack.md) | ✅ |
 | 35 | [Terraform으로 전체 인프라 코드화 (IaC)](05-capstone/day35-terraform.md) | ✅ |
 
-### Chapter 6. AI 인프라 — LLM 서버 띄우고 운영하기 (다음 시즌 예정)
-GPU 노드 구성, LLM 서빙 서버(vLLM / Ollama) 띄우기, RAG 파이프라인과 벡터 DB, Kubernetes 위에서 LLM 운영·모니터링
+### Chapter 6. AI 인프라 — LLM 서버 띄우고 RAG 운영하기
+| Day | 주제 | 상태 |
+|---|---|---|
+| 36 | [AI 인프라 개요 — LLM 서빙 스택과 GPU·VRAM 계산](06-ai-infra/day36-ai-infra-overview.md) | ✅ |
+| 37 | [GPU 서버 준비 — NVIDIA 드라이버, CUDA, Container Toolkit](06-ai-infra/day37-gpu-server.md) | ✅ |
+| 38 | [Ollama로 로컬 LLM 띄우기 & Open WebUI](06-ai-infra/day38-ollama.md) | ✅ |
+| 39 | [vLLM으로 고성능 LLM 서빙 (OpenAI 호환 API)](06-ai-infra/day39-vllm.md) | ✅ |
+| 40 | [LLM 게이트웨이 — LiteLLM으로 모델 통합·키·사용량 관리](06-ai-infra/day40-llm-gateway.md) | ✅ |
+| 41 | [임베딩과 벡터 DB — Qdrant / pgvector](06-ai-infra/day41-embedding-vectordb.md) | ✅ |
+| 42 | [RAG 파이프라인 직접 만들기 (청킹·검색·생성)](06-ai-infra/day42-rag-pipeline.md) | ✅ |
+| 43 | [RAG 서비스 컨테이너화 & Docker Compose 통합](06-ai-infra/day43-rag-compose.md) | ✅ |
+| 44 | [Kubernetes에서 GPU 쓰기 — GPU Operator, Time-slicing/MIG](06-ai-infra/day44-k8s-gpu.md) | ✅ |
+| 45 | [Kubernetes에 LLM 서빙 배포 — vLLM, 모델 캐시, KServe](06-ai-infra/day45-llm-on-k8s.md) | ✅ |
+| 46 | [LLM 오토스케일링 — KEDA, 큐 기반 확장, Scale-to-zero](06-ai-infra/day46-llm-autoscaling.md) | ✅ |
+| 47 | [LLM 관측성 — TTFT·처리량·KV 캐시 모니터링, 트레이싱](06-ai-infra/day47-llm-observability.md) | ✅ |
+| 48 | [LLM 보안·가드레일·RAG 평가](06-ai-infra/day48-llm-security-eval.md) | ✅ |
+| 49 | [종합 — 홈랩 K8s에 사내 문서 RAG 챗봇 운영하기](06-ai-infra/day49-capstone-rag-chatbot.md) | ✅ |
+
+### Chapter 7. GitOps & CI/CD — Git 하나로 배포까지 자동화하기
+| Day | 주제 | 상태 |
+|---|---|---|
+| 50 | [CI/CD와 GitOps — Push 배포 vs Pull 배포](07-gitops/day50-cicd-vs-gitops.md) | ✅ |
+| 51 | [GitHub Actions로 이미지 빌드·테스트·푸시 (GHCR, 캐시, 멀티 아키텍처)](07-gitops/day51-github-actions.md) | ✅ |
+| 52 | [Kustomize로 환경별(dev/stage/prod) 매니페스트 관리](07-gitops/day52-kustomize.md) | ✅ |
+| 53 | [Argo CD 설치와 첫 GitOps 배포 (Auto-sync, Self-heal)](07-gitops/day53-argocd.md) | ✅ |
+| 54 | [이미지 태그 자동 갱신(Argo CD Image Updater)과 환경 승격 흐름](07-gitops/day54-image-updater-promotion.md) | ✅ |
+| 55 | [GitOps 시크릿 관리 — SOPS, External Secrets](07-gitops/day55-secrets.md) | ✅ |
+| 56 | [Argo Rollouts로 점진적 배포 (Canary, Blue-Green)](07-gitops/day56-argo-rollouts.md) | ✅ |
+| 57 | [공급망 보안 — Trivy, cosign, Kyverno](07-gitops/day57-supply-chain-security.md) | ✅ |
+
+### Chapter 8. SRE & 관측성 — 숫자로 약속하고 지키기
+| Day | 주제 | 상태 |
+|---|---|---|
+| 58 | SRE 개념 — SLI/SLO/에러 버짓, 모니터링 vs 관측성 | ✍️ 작성 중 |
+| 59 | OpenTelemetry 계측 — 트레이스·메트릭·로그 | ✍️ 작성 중 |
+| 60 | 로그 수집 — Loki + Grafana Alloy | ✍️ 작성 중 |
+| 61 | 분산 트레이싱 — Tempo | ✍️ 작성 중 |
+| 62 | 알림 설계 — Alertmanager, 증상 기반 알림, 알림 피로 | ✍️ 작성 중 |
+| 63 | SLO 기반 Canary 분석 — Argo Rollouts + Prometheus | ✍️ 작성 중 |
+| 64 | 카오스 엔지니어링 — Chaos Mesh | ✍️ 작성 중 |
+| 65 | 장애 대응과 회고 — 런북, 온콜, 비난 없는 포스트모템 | ✍️ 작성 중 |
+
+### Chapter 9. 보안 — 4C 레이어별로 지키기
+| Day | 주제 | 상태 |
+|---|---|---|
+| 66 | 위협 모델링과 클라우드 네이티브 보안 4C | ✍️ 작성 중 |
+| 67 | 리눅스 호스트 하드닝 — SSH, sudo, nftables, fail2ban, Lynis/CIS | ✍️ 작성 중 |
+| 68 | 컨테이너 런타임 보안 — rootless, capabilities, seccomp, AppArmor | ✍️ 작성 중 |
+| 69 | K8s 워크로드 보안 — Pod Security Admission, securityContext, kube-bench | ✍️ 작성 중 |
+| 70 | NetworkPolicy와 제로 트러스트, mTLS | ✍️ 작성 중 |
+| 71 | 시크릿·인증서 — OpenBao/Vault, cert-manager | ✍️ 작성 중 |
+| 72 | 런타임 위협 탐지 — Falco | ✍️ 작성 중 |
+| 73 | 인증 통합과 감사 — Keycloak OIDC SSO, K8s 감사 로그 | ✍️ 작성 중 |
 
 > 로드맵은 진행하면서 조정될 수 있습니다.
 
@@ -96,6 +147,10 @@ infra/
 ├── 02-kubernetes/              # Chapter 2. Kubernetes (Day 08~20)
 ├── 03-virtualization-network/  # Chapter 3. 가상화·네트워크 (Day 21~24)
 ├── 04-openstack/               # Chapter 4. OpenStack (Day 25~33)
-└── 05-capstone/                # Chapter 5. 종합 프로젝트 (Day 34~35)
+├── 05-capstone/                # Chapter 5. 종합 프로젝트 (Day 34~35)
+├── 06-ai-infra/                # Chapter 6. AI 인프라 (Day 36~49)
+├── 07-gitops/                  # Chapter 7. GitOps & CI/CD (Day 50~57)
+├── 08-sre-observability/       # Chapter 8. SRE & 관측성 (Day 58~65)
+└── 09-security/                # Chapter 9. 보안 (Day 66~73)
     └── (각 폴더) images/       # 글에 쓰인 다이어그램 (SVG)
 ```

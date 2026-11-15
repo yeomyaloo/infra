@@ -1,14 +1,16 @@
-# 🏗️ Infra Study — Docker에서 OpenStack, 그리고 AI 인프라까지
+# 🏗️ Infra Study — 인프라 · AI · 보안 · 해킹 · 자격증
 
-하루에 한 주제씩, 컨테이너 한 개에서 시작해 프라이빗 클라우드까지 점진적으로 키워가는 인프라 학습 기록입니다.
+하루에 한 주제씩, 컨테이너 한 개에서 시작해 프라이빗 클라우드, AI 서빙, 배포 자동화, 보안까지 점진적으로 키워 가는 학습 기록입니다. 블로그와 같은 5개 탭(인프라 · AI · 보안 · 해킹 · 자격증 준비)으로 묶었습니다.
 
 ```
-홈랩 서버 준비  →  Docker (컨테이너 1개)  →  Kubernetes (오케스트레이션)  →  가상화·네트워크 기초  →  OpenStack (프라이빗 클라우드)  →  OpenStack 위 Kubernetes + IaC  →  AI 인프라
+홈랩 서버 준비  →  Docker (컨테이너 1개)  →  Kubernetes (오케스트레이션)  →  가상화·네트워크 기초  →  OpenStack (프라이빗 클라우드)  →  OpenStack 위 Kubernetes + IaC  →  AI 인프라  →  GitOps  →  SRE  →  보안  →  화이트해커
 ```
 
 각 글은 **목표 → 개념(그림) → 실습 → 트러블슈팅 → 핵심 정리 → 셀프 체크 퀴즈 → 다음 예고** 순서로 구성됩니다.
 
 ## 📚 로드맵
+
+## 🏗️ 인프라 탭
 
 ### Chapter 0. 홈랩 — 남는 노트북/PC를 서버로 (번외)
 | 편 | 주제 | 상태 |
@@ -72,24 +74,6 @@
 | 34 | [OpenStack VM 위에 Kubernetes 클러스터 구축](05-capstone/day34-k8s-on-openstack.md) | ✅ |
 | 35 | [Terraform으로 전체 인프라 코드화 (IaC)](05-capstone/day35-terraform.md) | ✅ |
 
-### Chapter 6. AI 인프라 — LLM 서버 띄우고 RAG 운영하기
-| Day | 주제 | 상태 |
-|---|---|---|
-| 36 | [AI 인프라 개요 — LLM 서빙 스택과 GPU·VRAM 계산](06-ai-infra/day36-ai-infra-overview.md) | ✅ |
-| 37 | [GPU 서버 준비 — NVIDIA 드라이버, CUDA, Container Toolkit](06-ai-infra/day37-gpu-server.md) | ✅ |
-| 38 | [Ollama로 로컬 LLM 띄우기 & Open WebUI](06-ai-infra/day38-ollama.md) | ✅ |
-| 39 | [vLLM으로 고성능 LLM 서빙 (OpenAI 호환 API)](06-ai-infra/day39-vllm.md) | ✅ |
-| 40 | [LLM 게이트웨이 — LiteLLM으로 모델 통합·키·사용량 관리](06-ai-infra/day40-llm-gateway.md) | ✅ |
-| 41 | [임베딩과 벡터 DB — Qdrant / pgvector](06-ai-infra/day41-embedding-vectordb.md) | ✅ |
-| 42 | [RAG 파이프라인 직접 만들기 (청킹·검색·생성)](06-ai-infra/day42-rag-pipeline.md) | ✅ |
-| 43 | [RAG 서비스 컨테이너화 & Docker Compose 통합](06-ai-infra/day43-rag-compose.md) | ✅ |
-| 44 | [Kubernetes에서 GPU 쓰기 — GPU Operator, Time-slicing/MIG](06-ai-infra/day44-k8s-gpu.md) | ✅ |
-| 45 | [Kubernetes에 LLM 서빙 배포 — vLLM, 모델 캐시, KServe](06-ai-infra/day45-llm-on-k8s.md) | ✅ |
-| 46 | [LLM 오토스케일링 — KEDA, 큐 기반 확장, Scale-to-zero](06-ai-infra/day46-llm-autoscaling.md) | ✅ |
-| 47 | [LLM 관측성 — TTFT·처리량·KV 캐시 모니터링, 트레이싱](06-ai-infra/day47-llm-observability.md) | ✅ |
-| 48 | [LLM 보안·가드레일·RAG 평가](06-ai-infra/day48-llm-security-eval.md) | ✅ |
-| 49 | [종합 — 홈랩 K8s에 사내 문서 RAG 챗봇 운영하기](06-ai-infra/day49-capstone-rag-chatbot.md) | ✅ |
-
 ### Chapter 7. GitOps & CI/CD — Git 하나로 배포까지 자동화하기
 | Day | 주제 | 상태 |
 |---|---|---|
@@ -114,6 +98,28 @@
 | 64 | [카오스 엔지니어링 — Chaos Mesh](08-sre-observability/day64-chaos-mesh.md) | ✅ |
 | 65 | [장애 대응과 회고 — 런북, 온콜, 비난 없는 포스트모템](08-sre-observability/day65-incident-postmortem.md) | ✅ |
 
+## 🤖 AI 탭
+
+### Chapter 6. AI 인프라 — LLM 서버 띄우고 RAG 운영하기
+| Day | 주제 | 상태 |
+|---|---|---|
+| 36 | [AI 인프라 개요 — LLM 서빙 스택과 GPU·VRAM 계산](06-ai-infra/day36-ai-infra-overview.md) | ✅ |
+| 37 | [GPU 서버 준비 — NVIDIA 드라이버, CUDA, Container Toolkit](06-ai-infra/day37-gpu-server.md) | ✅ |
+| 38 | [Ollama로 로컬 LLM 띄우기 & Open WebUI](06-ai-infra/day38-ollama.md) | ✅ |
+| 39 | [vLLM으로 고성능 LLM 서빙 (OpenAI 호환 API)](06-ai-infra/day39-vllm.md) | ✅ |
+| 40 | [LLM 게이트웨이 — LiteLLM으로 모델 통합·키·사용량 관리](06-ai-infra/day40-llm-gateway.md) | ✅ |
+| 41 | [임베딩과 벡터 DB — Qdrant / pgvector](06-ai-infra/day41-embedding-vectordb.md) | ✅ |
+| 42 | [RAG 파이프라인 직접 만들기 (청킹·검색·생성)](06-ai-infra/day42-rag-pipeline.md) | ✅ |
+| 43 | [RAG 서비스 컨테이너화 & Docker Compose 통합](06-ai-infra/day43-rag-compose.md) | ✅ |
+| 44 | [Kubernetes에서 GPU 쓰기 — GPU Operator, Time-slicing/MIG](06-ai-infra/day44-k8s-gpu.md) | ✅ |
+| 45 | [Kubernetes에 LLM 서빙 배포 — vLLM, 모델 캐시, KServe](06-ai-infra/day45-llm-on-k8s.md) | ✅ |
+| 46 | [LLM 오토스케일링 — KEDA, 큐 기반 확장, Scale-to-zero](06-ai-infra/day46-llm-autoscaling.md) | ✅ |
+| 47 | [LLM 관측성 — TTFT·처리량·KV 캐시 모니터링, 트레이싱](06-ai-infra/day47-llm-observability.md) | ✅ |
+| 48 | [LLM 보안·가드레일·RAG 평가](06-ai-infra/day48-llm-security-eval.md) | ✅ |
+| 49 | [종합 — 홈랩 K8s에 사내 문서 RAG 챗봇 운영하기](06-ai-infra/day49-capstone-rag-chatbot.md) | ✅ |
+
+## 🛡️ 보안 탭
+
 ### Chapter 9. 보안 — 4C 레이어별로 지키기
 | Day | 주제 | 상태 |
 |---|---|---|
@@ -126,13 +132,54 @@
 | 72 | [런타임 위협 탐지 — Falco](09-security/day72-falco.md) | ✅ |
 | 73 | [인증 통합과 감사 — Keycloak OIDC SSO, K8s 감사 로그](09-security/day73-keycloak-sso-audit.md) | ✅ |
 
+## 🕵️ 해킹 탭
+
+### 해킹 트랙. 화이트해커 입문 — 내 실습장에서 공격하고, 탐지하고, 고치기
+> ⚠️ 모든 실습은 본인 소유의 격리된 실습장 또는 연습용으로 만든 취약 대상에서만 합니다.
+
+| 편 | 주제 | 상태 |
+|---|---|---|
+| 01 | [화이트해커 입문 — 법적 경계, 허가와 범위, 진로](hacking/hack01-ethical-hacking-intro.md) | ✅ |
+| 02 | [격리 실습장 구축 — Kali, DVWA, Juice Shop, Metasploitable](hacking/hack02-isolated-lab.md) | ✅ |
+| 03 | [정보 수집 — nmap, 서비스 식별, 디렉터리 탐색](hacking/hack03-recon.md) | ✅ |
+| 04 | [웹 취약점 ① — Burp Suite, SQL Injection, XSS](hacking/hack04-web-sqli-xss.md) | ✅ |
+| 05 | [웹 취약점 ② — 인증 우회, IDOR, SSRF, 파일 업로드, 명령 주입](hacking/hack05-web-owasp-top10.md) | ✅ |
+| 06 | [리눅스 권한 상승 — SUID, sudo 설정 실수, cron](hacking/hack06-linux-privesc.md) | ✅ |
+| 07 | [컨테이너 탈출 위험 — privileged, docker.sock 노출](hacking/hack07-container-escape-risks.md) | ✅ |
+| 08 | [K8s 공격 시나리오 — Kubernetes Goat](hacking/hack08-k8s-attack-scenarios.md) | ✅ |
+| 09 | [클라우드 IAM 설정 실수 — CloudGoat](hacking/hack09-cloud-iam-mistakes.md) | ✅ |
+| 10 | [탐지 관점 — 실습 공격이 Falco·로그·알림에 남는 흔적](hacking/hack10-detection-view.md) | ✅ |
+| 11 | [모의해킹 보고서 — 재현 절차, CVSS, 조치 권고](hacking/hack11-pentest-report.md) | ✅ |
+| 12 | [다음 단계 — CTF, 학습 플랫폼, 버그바운티, 자격증](hacking/hack12-next-steps.md) | ✅ |
+
+## 📜 자격증 준비 탭
+
+### RHCSA(EX200) 시험 대비 — RHEL 10 기준
+> 공식 시험 목표를 바탕으로 직접 만든 연습 문제입니다. 실제 시험 문제가 아닙니다.
+
+| 편 | 주제 | 상태 |
+|---|---|---|
+| R00 | [시험 개요·준비 전략과 실습 환경(VM 2대) 구축](certs/rhcsa/r00-exam-overview-lab.md) | ✅ |
+| R01 | [필수 도구 — 셸, 리다이렉션, grep/정규식, SSH, 아카이브, 링크, 권한](certs/rhcsa/r01-essential-tools.md) | ✅ |
+| R02 | [소프트웨어 관리(RPM·Flatpak) & 간단한 셸 스크립트](certs/rhcsa/r02-software-shell-scripts.md) | ✅ |
+| R03 | [실행 중인 시스템 운영 — 부팅/타깃, root 비밀번호 복구, 프로세스, journal](certs/rhcsa/r03-operate-running-systems.md) | ✅ |
+| R04 | [로컬 스토리지 — GPT 파티션, LVM, swap, UUID/라벨 마운트](certs/rhcsa/r04-local-storage.md) | ✅ |
+| R05 | [파일 시스템 — VFAT/ext4/XFS, NFS, autofs, 권한 문제 해결](certs/rhcsa/r05-file-systems.md) | ✅ |
+| R06 | [시스템 배포·유지 — at/cron/timer, 서비스, chrony, 부트로더](certs/rhcsa/r06-deploy-maintain.md) | ✅ |
+| R07 | [기본 네트워킹 — IPv4/IPv6, 호스트명 해석, firewalld](certs/rhcsa/r07-networking.md) | ✅ |
+| R08 | [사용자·그룹 — 계정, 비밀번호 에이징, sudo](certs/rhcsa/r08-users-groups.md) | ✅ |
+| R09 | [보안 — firewalld, umask, SSH 키, SELinux](certs/rhcsa/r09-security.md) | ✅ |
+| R10 | [모의고사 1](certs/rhcsa/r10-mock-exam-1.md) | ✅ |
+| R11 | [모의고사 2](certs/rhcsa/r11-mock-exam-2.md) | ✅ |
+
+
 > 로드맵은 진행하면서 조정될 수 있습니다.
 
 ## 🧪 실습 환경 기준
 | 항목 | 버전 / 도구 |
 |---|---|
 | OS | Ubuntu 24.04 LTS (Windows는 Docker Desktop + WSL2) |
-| Kubernetes | v1.34 이상 (로컬: kind `infra-lab` 클러스터, 멀티노드: kubeadm. Chapter 9 일부 실습은 최신 kind 노드 v1.37 기준) |
+| Kubernetes | v1.34 이상 (로컬: kind `infra-lab` 클러스터, 멀티노드: kubeadm. 보안 탭 일부 실습은 최신 kind 노드 v1.37 기준) |
 | OpenStack | 2025.1 Epoxy 이후 (DevStack / Kolla-Ansible) |
 | IaC | Terraform + terraform-provider-openstack (OpenTofu 호환) |
 
@@ -151,6 +198,8 @@ infra/
 ├── 06-ai-infra/                # Chapter 6. AI 인프라 (Day 36~49)
 ├── 07-gitops/                  # Chapter 7. GitOps & CI/CD (Day 50~57)
 ├── 08-sre-observability/       # Chapter 8. SRE & 관측성 (Day 58~65)
-└── 09-security/                # Chapter 9. 보안 (Day 66~73)
+├── 09-security/                # Chapter 9. 보안 (Day 66~73)
+├── hacking/                    # 해킹 탭. 화이트해커 입문 (해킹 01~12)
+└── certs/rhcsa/                # 자격증 준비 탭. RHCSA(EX200) 대비 (R00~R11)
     └── (각 폴더) images/       # 글에 쓰인 다이어그램 (SVG)
 ```

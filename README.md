@@ -196,6 +196,21 @@
 | R10 | [모의고사 1](certs/rhcsa/r10-mock-exam-1.md) | ✅ |
 | R11 | [모의고사 2](certs/rhcsa/r11-mock-exam-2.md) | ✅ |
 
+### CKA(Certified Kubernetes Administrator) 시험 대비 — Kubernetes v1.37 기준
+> 공식 커리큘럼을 바탕으로 직접 만든 연습 문제입니다. 실제 시험 문제가 아닙니다.
+
+| 편 | 주제 | 상태 |
+|---|---|---|
+| K00 | [시험 개요·준비 전략과 실습 클러스터(kubeadm 3노드)](certs/cka/k00-exam-overview-lab.md) | ✅ |
+| K01 | [클러스터 아키텍처 ① — kubeadm 설치·업그레이드, etcd 백업·복원](certs/cka/k01-cluster-install-upgrade-etcd.md) | ✅ |
+| K02 | [클러스터 아키텍처 ② — RBAC, Helm·Kustomize, CRD·오퍼레이터, CNI/CSI/CRI](certs/cka/k02-rbac-helm-kustomize-crd.md) | ✅ |
+| K03 | [워크로드·스케줄링](certs/cka/k03-workloads-scheduling.md) | ✅ |
+| K04 | [서비스·네트워킹 — Service, NetworkPolicy, Gateway API, CoreDNS](certs/cka/k04-services-networking.md) | ✅ |
+| K05 | [스토리지 — StorageClass, PV/PVC, 접근 모드, 반환 정책](certs/cka/k05-storage.md) | ✅ |
+| K06 | [트러블슈팅 — 노드, 컨트롤 플레인, 애플리케이션, 네트워크](certs/cka/k06-troubleshooting.md) | ✅ |
+| K07 | [모의고사 1](certs/cka/k07-mock-exam-1.md) | ✅ |
+| K08 | [모의고사 2 (함정 난이도)](certs/cka/k08-mock-exam-2.md) | ✅ |
+
 
 > 로드맵은 진행하면서 조정될 수 있습니다.
 
@@ -224,6 +239,8 @@ infra/
 ├── 08-sre-observability/       # Chapter 8. SRE & 관측성 (Day 58~65)
 ├── 09-security/                # Chapter 9. 보안 (Day 66~73)
 ├── hacking/                    # 해킹 탭. 화이트해커 입문 + 개발·인프라 보안 (해킹 01~28)
-└── certs/rhcsa/                # 자격증 준비 탭. RHCSA(EX200) 대비 (R00~R11)
+└── certs/                      # 자격증 준비 탭
+    ├── rhcsa/                  # RHCSA(EX200) 대비 (R00~R11)
+    └── cka/                    # CKA 대비 (K00~K08)
     └── (각 폴더) images/       # 글에 쓰인 다이어그램 (SVG)
 ```

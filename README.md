@@ -152,6 +152,30 @@
 | 11 | [모의해킹 보고서 — 재현 절차, CVSS, 조치 권고](hacking/hack11-pentest-report.md) | ✅ |
 | 12 | [다음 단계 — CTF, 학습 플랫폼, 버그바운티, 자격증](hacking/hack12-next-steps.md) | ✅ |
 
+#### 개발 보안 (해킹 13~20)
+| 편 | 주제 | 상태 |
+|---|---|---|
+| 13 | [시큐어 코딩 기초 — 입력 검증, 출력 인코딩, 에러 처리](hacking/hack13-secure-coding.md) | ✅ |
+| 14 | [소스코드 정적 분석 — Semgrep, CodeQL로 Java/Spring 점검](hacking/hack14-sast.md) | ✅ |
+| 15 | [인증·인가 실수 — JWT 검증, 세션, OAuth2/OIDC 설정](hacking/hack15-authn-authz-mistakes.md) | ✅ |
+| 16 | [API 보안 — OWASP API Security Top 10, 데이터 노출, rate limiting](hacking/hack16-api-security.md) | ✅ |
+| 17 | [브라우저 보안 — CORS, CSRF, 쿠키 속성, 보안 헤더](hacking/hack17-browser-security.md) | ✅ |
+| 18 | [역직렬화·XXE·SSTI — 원리와 안전한 대안](hacking/hack18-deserialization-xxe-ssti.md) | ✅ |
+| 19 | [의존성·시크릿 — OSV-Scanner, Dependabot, gitleaks](hacking/hack19-dependencies-secrets.md) | ✅ |
+| 20 | [OWASP ZAP을 CI에 붙여 배포 전 자동 점검](hacking/hack20-zap-in-ci.md) | ✅ |
+
+#### 인프라 보안 심화 (해킹 21~28)
+| 편 | 주제 | 상태 |
+|---|---|---|
+| 21 | [Wireshark로 실습장 트래픽 분석](hacking/hack21-wireshark.md) | ✅ |
+| 22 | [ARP 스푸핑·중간자 공격 — 원리와 탐지](hacking/hack22-arp-mitm-detection.md) | ✅ |
+| 23 | [CI/CD 파이프라인 보안 — Actions 권한·시크릿·서드파티 액션](hacking/hack23-cicd-security.md) | ✅ |
+| 24 | [IaC 보안 점검 — Checkov, Trivy로 Terraform·K8s 매니페스트](hacking/hack24-iac-scanning.md) | ✅ |
+| 25 | [Windows·Active Directory 보안 기초 — 흔한 설정 실수와 방어](hacking/hack25-windows-ad-basics.md) | ✅ |
+| 26 | [홈랩 공유기·IoT 기기 보안 점검 (본인 소유 기기만)](hacking/hack26-router-iot.md) | ✅ |
+| 27 | [침해사고 대응·포렌식 기초 — 로그·타임라인, 증거 보존](hacking/hack27-incident-forensics.md) | ✅ |
+| 28 | [종합 실습 — RAG 챗봇 점검과 보고서](hacking/hack28-capstone-rag-assessment.md) | ✅ |
+
 ## 📜 자격증 준비 탭
 
 ### RHCSA(EX200) 시험 대비 — RHEL 10 기준
@@ -199,7 +223,7 @@ infra/
 ├── 07-gitops/                  # Chapter 7. GitOps & CI/CD (Day 50~57)
 ├── 08-sre-observability/       # Chapter 8. SRE & 관측성 (Day 58~65)
 ├── 09-security/                # Chapter 9. 보안 (Day 66~73)
-├── hacking/                    # 해킹 탭. 화이트해커 입문 (해킹 01~12)
+├── hacking/                    # 해킹 탭. 화이트해커 입문 + 개발·인프라 보안 (해킹 01~28)
 └── certs/rhcsa/                # 자격증 준비 탭. RHCSA(EX200) 대비 (R00~R11)
     └── (각 폴더) images/       # 글에 쓰인 다이어그램 (SVG)
 ```

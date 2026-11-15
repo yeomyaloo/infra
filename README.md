@@ -211,6 +211,21 @@
 | K07 | [모의고사 1](certs/cka/k07-mock-exam-1.md) | ✅ |
 | K08 | [모의고사 2 (함정 난이도)](certs/cka/k08-mock-exam-2.md) | ✅ |
 
+### CKS(Certified Kubernetes Security Specialist) 시험 대비 — Kubernetes v1.37 기준
+> 공식 커리큘럼을 바탕으로 직접 만든 연습 문제입니다. 실제 시험 문제가 아닙니다. CKA 합격이 응시 조건입니다.
+
+| 편 | 주제 | 상태 |
+|---|---|---|
+| S00 | [시험 개요·준비 전략과 실습 환경(보안 도구 준비)](certs/cks/s00-exam-overview-lab.md) | ✅ |
+| S01 | [클러스터 설정 — NetworkPolicy, CIS 벤치마크, TLS, 메타데이터·바이너리 검증](certs/cks/s01-cluster-setup.md) | ✅ |
+| S02 | [클러스터 하드닝 — RBAC 최소화, ServiceAccount, API 서버 접근 제한](certs/cks/s02-cluster-hardening.md) | ✅ |
+| S03 | [시스템 하드닝 — 호스트 최소화, AppArmor, seccomp](certs/cks/s03-system-hardening.md) | ✅ |
+| S04 | [마이크로서비스 취약점 최소화 — PSA, Secret 암호화, gVisor, mTLS](certs/cks/s04-microservice-vulnerabilities.md) | ✅ |
+| S05 | [공급망 보안 — 이미지 최소화, SBOM, 허용 레지스트리, 스캔](certs/cks/s05-supply-chain.md) | ✅ |
+| S06 | [모니터링·로깅·런타임 보안 — 감사 로그, Falco, 불변 컨테이너](certs/cks/s06-monitoring-runtime.md) | ✅ |
+| S07 | [모의고사 1](certs/cks/s07-mock-exam-1.md) | ✅ |
+| S08 | [모의고사 2 (함정 난이도)](certs/cks/s08-mock-exam-2.md) | ✅ |
+
 
 > 로드맵은 진행하면서 조정될 수 있습니다.
 
@@ -241,6 +256,7 @@ infra/
 ├── hacking/                    # 해킹 탭. 화이트해커 입문 + 개발·인프라 보안 (해킹 01~28)
 └── certs/                      # 자격증 준비 탭
     ├── rhcsa/                  # RHCSA(EX200) 대비 (R00~R11)
-    └── cka/                    # CKA 대비 (K00~K08)
+    ├── cka/                    # CKA 대비 (K00~K08)
+    └── cks/                    # CKS 대비 (S00~S08)
     └── (각 폴더) images/       # 글에 쓰인 다이어그램 (SVG)
 ```

@@ -176,6 +176,13 @@
 | 27 | [침해사고 대응·포렌식 기초 — 로그·타임라인, 증거 보존](hacking/hack27-incident-forensics.md) | ✅ |
 | 28 | [종합 실습 — RAG 챗봇 점검과 보고서](hacking/hack28-capstone-rag-assessment.md) | ✅ |
 
+#### 레드팀·블루팀 체험 (해킹 29~31)
+| 편 | 주제 | 상태 |
+|---|---|---|
+| 29 | [IoT·펌웨어 보안 입문 — 펌웨어 분석·에뮬레이션·하드닝](hacking/hack29-iot-firmware.md) | ✅ |
+| 30 | [블루팀 실습 — Wazuh로 내 공격 탐지하고 룰 만들기](hacking/hack30-blue-team-wazuh.md) | ✅ |
+| 31 | [레드 vs 블루 종합 시나리오 — 침투부터 탐지·대응·보고까지](hacking/hack31-red-vs-blue.md) | ✅ |
+
 
 ## ☁️ 클라우드 탭
 
@@ -368,7 +375,7 @@ infra/
 ├── 09-security/                # Chapter 9. 보안 (Day 66~73)
 ├── cloud/                      # 클라우드 탭. AWS (cloud01~11)
 ├── platform/                   # 플랫폼 엔지니어링 탭 (plat01~08)
-├── hacking/                    # 해킹 탭. 화이트해커 입문 + 개발·인프라 보안 (해킹 01~28)
+├── hacking/                    # 해킹 탭. 화이트해커 입문 + 개발·인프라 보안 (해킹 01~31)
 └── certs/                      # 자격증 준비 탭
     ├── rhcsa/                  # RHCSA(EX200) 대비 (R00~R11)
     ├── cka/                    # CKA 대비 (K00~K08)

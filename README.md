@@ -226,6 +226,20 @@
 | S07 | [모의고사 1](certs/cks/s07-mock-exam-1.md) | ✅ |
 | S08 | [모의고사 2 (함정 난이도)](certs/cks/s08-mock-exam-2.md) | ✅ |
 
+### CKAD(Certified Kubernetes Application Developer) 시험 대비 — Kubernetes v1.37 기준
+> 공식 커리큘럼을 바탕으로 직접 만든 연습 문제입니다. 실제 시험 문제가 아닙니다.
+
+| 편 | 주제 | 상태 |
+|---|---|---|
+| A00 | [시험 개요·준비 전략과 실습 환경(이미지 빌드·로컬 레지스트리)](certs/ckad/a00-exam-overview-lab.md) | ✅ |
+| A01 | [애플리케이션 설계·빌드 — 이미지 빌드, Job·CronJob, 멀티 컨테이너, 볼륨](certs/ckad/a01-design-build.md) | ✅ |
+| A02 | [애플리케이션 배포 — 롤링·블루그린·카나리, Helm, Kustomize](certs/ckad/a02-deployment.md) | ✅ |
+| A03 | [관측성·유지보수 — probe, 로그, 디버깅, API 폐기 대응](certs/ckad/a03-observability-maintenance.md) | ✅ |
+| A04 | [환경·설정·보안 — ConfigMap/Secret, SecurityContext, SA, 쿼터, CRD, RBAC](certs/ckad/a04-environment-config-security.md) | ✅ |
+| A05 | [서비스·네트워킹 — Service, NetworkPolicy, Ingress·HTTPRoute](certs/ckad/a05-services-networking.md) | ✅ |
+| A06 | [모의고사 1](certs/ckad/a06-mock-exam-1.md) | ✅ |
+| A07 | [모의고사 2 (함정 난이도)](certs/ckad/a07-mock-exam-2.md) | ✅ |
+
 
 > 로드맵은 진행하면서 조정될 수 있습니다.
 
@@ -257,6 +271,7 @@ infra/
 └── certs/                      # 자격증 준비 탭
     ├── rhcsa/                  # RHCSA(EX200) 대비 (R00~R11)
     ├── cka/                    # CKA 대비 (K00~K08)
-    └── cks/                    # CKS 대비 (S00~S08)
+    ├── cks/                    # CKS 대비 (S00~S08)
+    └── ckad/                   # CKAD 대비 (A00~A07)
     └── (각 폴더) images/       # 글에 쓰인 다이어그램 (SVG)
 ```

@@ -1,4 +1,6 @@
-# 🏗️ Infra Study — 인프라 · AI · 보안 · 해킹 · 클라우드 · 플랫폼 · 자격증
+# 🥞 Stack Overflow — 쌓다 보니 넘쳤다
+
+> 인프라에서 시작해 AI·보안·해킹·클라우드·자격증까지, 한 층씩 쌓아 올린 학습 기록
 
 하루에 한 주제씩, 컨테이너 한 개에서 시작해 프라이빗 클라우드, AI 서빙, 배포 자동화, 보안까지 점진적으로 키워 가는 학습 기록입니다. 블로그와 같은 탭(인프라 · AI · 보안 · 해킹 · 클라우드 · 플랫폼 엔지니어링 · 자격증 준비)으로 묶었습니다.
 
@@ -117,6 +119,14 @@
 | 47 | [LLM 관측성 — TTFT·처리량·KV 캐시 모니터링, 트레이싱](06-ai-infra/day47-llm-observability.md) | ✅ |
 | 48 | [LLM 보안·가드레일·RAG 평가](06-ai-infra/day48-llm-security-eval.md) | ✅ |
 | 49 | [종합 — 홈랩 K8s에 사내 문서 RAG 챗봇 운영하기](06-ai-infra/day49-capstone-rag-chatbot.md) | ✅ |
+
+#### RAG 심화
+| 편 | 주제 | 상태 |
+|---|---|---|
+| 01 | [RAG 평가 — Ragas로 내 챗봇 점수 매기고 개선 루프 돌리기](06-ai-infra/rag01-evaluation-ragas.md) | ✅ |
+| 02 | [검색 품질 올리기 — 하이브리드 검색, 리랭커, 청킹 전략](06-ai-infra/rag02-retrieval-quality.md) | ✅ |
+| 03 | [이 블로그를 지식 베이스로 쓰는 문서 검색 챗봇](06-ai-infra/rag03-blog-docs-chatbot.md) | ✅ |
+| 04 | [최신 기법 개요 — Agentic RAG, GraphRAG, 멀티 쿼리·HyDE](06-ai-infra/rag04-advanced-rag-techniques.md) | ✅ |
 
 ## 🛡️ 보안 탭
 

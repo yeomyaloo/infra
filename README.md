@@ -356,6 +356,15 @@
 | T04 | [HCP Terraform과 협업](certs/terraform-associate/t04-hcp-terraform.md) | ✅ |
 | T05 | [모의고사 (57문항 · 60분)](certs/terraform-associate/t05-mock-exam.md) | ✅ |
 
+### OSCP(OffSec Certified Professional) 준비 가이드 — OSCP+ 기준
+> 학습 가이드입니다. 시험 규정·가격은 OffSec 공식 페이지 기준(2026-11-25 확인)이며 바뀔 수 있습니다. 실습은 허가된 플랫폼과 본인 소유 격리 랩에서만 합니다.
+
+| 편 | 주제 | 상태 |
+|---|---|---|
+| O00 | [OSCP 개요와 시험 구조 — OSCP+, 채점, 리포트 규칙, 상품 선택](certs/oscp/o00-overview-exam.md) | ✅ |
+| O01 | [준비 로드맵과 참고 자료 사용법 — 선행 지식, 3가지 일정안, 자료별 쓰는 법](certs/oscp/o01-roadmap-resources.md) | ✅ |
+| O02 | [실습 환경·노트·리포트·시험 당일 — 기록 습관이 점수가 된다](certs/oscp/o02-lab-report-examday.md) | ✅ |
+
 
 > 로드맵은 진행하면서 조정될 수 있습니다.
 
@@ -395,6 +404,7 @@ infra/
     ├── kcna/                   # KCNA (N00~N05)
     ├── kcsa/                   # KCSA (C00~C05)
     ├── aws-saa/                # AWS SAA (W00~W07)
-    └── terraform-associate/    # Terraform Associate (T00~T05)
+    ├── terraform-associate/    # Terraform Associate (T00~T05)
+    └── oscp/                   # OSCP 준비 가이드 (O00~O02)
     └── (각 폴더) images/       # 글에 쓰인 다이어그램 (SVG)
 ```
